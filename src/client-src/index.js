@@ -6,7 +6,7 @@
  * Github: https://github.com/lolitee
  * Discord: Tee#0001
  * 
- * Last Modified: Sunday, 12th February 2023 2:47:13 pm
+ * Last Modified: Wednesday, 10th May 2023 1:20:20 pm
  * Modified By: Tee (tee@stainless.love)
  * 
  * Copyright (c) 2023 Tee, Stainless Love
@@ -16,7 +16,7 @@
 
 import React from 'react'
 import { createRoot } from 'react-dom/client';
-import controller from './Controller.js'
+import controller from './controller.js';
 import App from './App.jsx'
 import './index.css';
 
@@ -40,4 +40,8 @@ export function dispatchEvent(name, data) {
 
 export function getApplicationID() {
     return csInterface.getApplicationID()
+}
+
+export function openURLInDefaultBrowser(url){
+    return csInterface.openURLInDefaultBrowser(url)
 }

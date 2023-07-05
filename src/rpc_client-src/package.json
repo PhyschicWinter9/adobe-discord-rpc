@@ -8,10 +8,10 @@
   },
   "author": {
     "name": "Tee",
-    "url": "https://github.com/lolitee/adobe-discord-rpc"
+    "url": "https://github.com/teeteeteeteetee/adobe-discord-rpc"
   },
   "license": "ISC",
   "dependencies": {
-    "discord-rpc": "3.1.4"
+    "discord-rpc": "4.0.1"
   }
 }

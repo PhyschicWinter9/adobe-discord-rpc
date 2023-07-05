@@ -6,7 +6,7 @@
  * Github: https://github.com/lolitee
  * Discord: Tee#0001
  * 
- * Last Modified: Sunday, 12th February 2023 2:47:45 pm
+ * Last Modified: Wednesday, 10th May 2023 12:58:02 pm
  * Modified By: Tee (tee@stainless.love)
  * 
  * Copyright (c) 2023 Tee, Stainless Love
@@ -38,9 +38,9 @@ export default function Preview() {
     }, [])
 
     return (
-        <div className="w-screen rounded overflow-hidden h-96 pt-4">
+        <div className="w-screen rounded-sm overflow-hidden h-96 pt-4">
             <div className="flex justify-center">
-                <div className="flex flex-col self-center bg-black rounded-sm">
+                <div className="flex flex-col self-center bg-black rounded-sm w-[320px]">
                     <div className="flex flex-col -space-y-12">
                         <Banner className={"self-start"} />
                         <div className="pl-3">
@@ -49,7 +49,7 @@ export default function Preview() {
                     </div>
                     <div className="w-full pt-7 px-5">
                         <div className="flex flex-col divide-y divide-tertiary gap-1 bg-black">
-                            <p className="text-white font-medium">{user.username}<span className="text-gray-300">{`#${user.discriminator}`}</span></p>
+                            <p className="text-white font-medium">{user.username}{user.discriminator != 0 && <span className="text-gray-300">{`#${user.discriminator}`}</span>}</p>
                             <p className="text-white font-medium tracking-tighter">PLAYING A GAME</p>
                         </div>
                         <div className="flex gap-2 pt-2 pb-5">
